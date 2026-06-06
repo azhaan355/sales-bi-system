@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0B0F19;
+  color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+/* Premium smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242F48;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6366F1;
+}
+
+/* Glassmorphism custom classes */
+.glass-panel {
+  background: rgba(21, 29, 48, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(36, 47, 72, 0.6);
+}
+
+.glass-card {
+  background: rgba(21, 29, 48, 0.55);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(36, 47, 72, 0.4);
+}
+
+/* Custom styles for charts tooltip */
+.recharts-default-tooltip {
+  background-color: #151D30 !important;
+  border: 1px solid #242F48 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.recharts-tooltip-label {
+  color: #8A99AD !important;
+  font-weight: 600 !important;
+}
